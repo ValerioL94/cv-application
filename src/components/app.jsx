@@ -1,5 +1,6 @@
 // import { useState } from 'react';
-import '/src/styles/App.css';
+import '/src/styles/app.css';
+import Contact from './contact';
 
 function App() {
   // const [status, setStatus] = useState('Test');
@@ -9,26 +10,7 @@ function App() {
         <div id="photo">
           <img src="src/assets/images/brown-ostrich.jpg" alt="brown ostrich" />
         </div>
-        <div id="Info">
-          <h2>Contact</h2>
-          <div>
-            <h3>Name</h3>
-            <p>John Smith</p>
-          </div>
-          <div>
-            <h3>Phone</h3>
-            <p>555-555-5555</p>
-          </div>
-          <div>
-            <h3>Email</h3>
-            <p>notarealemail@gmail.com</p>
-          </div>
-          <div>
-            <h3>Address</h3>
-            <p>123 notReal St., Big City</p>
-          </div>
-          <div></div>
-        </div>
+        <Contact />
         <div id="education">
           <h2>Education</h2>
           <div>
