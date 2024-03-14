@@ -1,4 +1,3 @@
-// import { useState } from 'react';
 import '/src/styles/app.css';
 import Contact from './contact';
 import Education from './education';
@@ -7,12 +6,11 @@ import About from './about';
 import Experience from './experience';
 
 function App() {
-  // const [status, setStatus] = useState('Test');
   return (
     <>
       <div className="side">
         <div id="photo">
-          <img src="/src/assets/images/brown-ostrich.jpg" alt="brown ostrich" />
+          <img src="/brownOstrich.jpg" alt="brown ostrich" />
         </div>
         <Contact />
         <Education />
