@@ -49,23 +49,21 @@ export default function Language() {
                     ...list,
                     { id: newLanguage, language: newLanguage },
                   ]);
+                setNewLanguage('');
               }}
             >
               {'Save'}
             </button>
           </>
         ) : (
-          <>
-            <input type="text" style={{ visibility: 'hidden' }} />
-            <button
-              type="button"
-              onClick={() => {
-                setIsEditing(!isEditing);
-              }}
-            >
-              {'Add'}
-            </button>
-          </>
+          <button
+            type="button"
+            onClick={() => {
+              setIsEditing(!isEditing);
+            }}
+          >
+            {'Add'}
+          </button>
         )}
       </form>
     </section>
