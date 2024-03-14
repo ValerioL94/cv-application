@@ -2,8 +2,8 @@ import { useState } from 'react';
 import '/src/styles/education.css';
 
 const defaultList = [
-  { years: '2002-2006', title: 'Some degree', school: 'Some College' },
-  { years: '2007-2012', title: 'Another degree', school: 'Some University' },
+  { years: '2002-2006', title: 'Cool degree', school: 'Cool College' },
+  { years: '2007-2012', title: 'Cooler degree', school: 'Cool University' },
 ];
 
 export default function Education() {
@@ -41,7 +41,9 @@ export default function Education() {
         {isEditing ? (
           <>
             <div>
-              <label htmlFor="degYears">Years</label>
+              <label htmlFor="degYears">
+                <b>Years</b>
+              </label>
               <input
                 id="degYears"
                 name="degreeYears"
@@ -55,7 +57,9 @@ export default function Education() {
               />
             </div>
             <div>
-              <label htmlFor="degTitle">Title</label>
+              <label htmlFor="degTitle">
+                <b>Title</b>
+              </label>
               <input
                 id="degTitle"
                 name="degreeTitle"
@@ -69,7 +73,9 @@ export default function Education() {
               />
             </div>
             <div>
-              <label htmlFor="degSchool">School</label>
+              <label htmlFor="degSchool">
+                <b>School</b>
+              </label>
               <input
                 id="degSchool"
                 name="DegreeSchool"

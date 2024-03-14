@@ -27,7 +27,7 @@ export default function About() {
         >
           <div className="wrapper">
             <label htmlFor="name">
-              Name
+              <b>Name</b>
               <input
                 type="text"
                 name="name"
@@ -47,7 +47,7 @@ export default function About() {
             </button>
           </div>
           <label htmlFor="currentTitle">
-            Current Title
+            <b>Current Title</b>
             <input
               type="text"
               name="currentTitle"
@@ -57,7 +57,7 @@ export default function About() {
             />
           </label>
           <label htmlFor="introduction">
-            Introduction
+            <b>Introduction</b>
             <textarea
               type="text"
               name="introduction"

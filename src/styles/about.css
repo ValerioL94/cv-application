@@ -14,11 +14,9 @@
 .intro label {
   display: flex;
   flex-direction: column;
-  font-weight: 600;
 }
 .intro input {
   font-size: 16px;
-  max-width: 200px;
 }
 
 .wrapper {

@@ -10,7 +10,7 @@ li p {
   margin: 5px 0px;
 }
 
-form button {
+.sideForm button {
   align-self: end;
   font-weight: 600;
   color: midnightblue;

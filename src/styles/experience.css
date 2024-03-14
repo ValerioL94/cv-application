@@ -1,0 +1,31 @@
+#experience button {
+  color: white;
+  background-color: midnightblue;
+}
+
+.expTitle {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid;
+}
+#jobs {
+  gap: 20px;
+}
+.expForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.expForm div {
+  display: flex;
+  flex-direction: column;
+}
+
+.expForm button {
+  align-self: end;
+}
+
+#jobDescription {
+  height: 100px;
+}

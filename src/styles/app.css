@@ -35,10 +35,3 @@
   max-width: 600px;
   box-sizing: border-box;
 }
-
-.expTitle {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  border-bottom: 1px solid;
-}
