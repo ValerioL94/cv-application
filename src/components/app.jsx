@@ -12,7 +12,7 @@ function App() {
     <>
       <div className="side">
         <div id="photo">
-          <img src="src/assets/images/brown-ostrich.jpg" alt="brown ostrich" />
+          <img src="/src/assets/images/brown-ostrich.jpg" alt="brown ostrich" />
         </div>
         <Contact />
         <Education />
