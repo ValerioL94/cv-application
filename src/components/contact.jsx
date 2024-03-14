@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import '/src/styles/contact.css';
 
+const defaultInfo = {
+  phone: '555-555-5555',
+  email: 'notarealemail@gmail.com',
+  address: '123 notReal St., BigCity',
+};
 export default function Contact() {
   const [isEditing, setIsEditing] = useState(false);
-  const [info, setInfo] = useState({
-    name: 'John Smith',
-    phone: '555-555-5555',
-    email: 'notarealemail@gmail.com',
-    address: '123 notReal St., BigCity',
-  });
+  const [info, setInfo] = useState(defaultInfo);
   function handleChange(e) {
     setInfo({
       ...info,
@@ -35,22 +35,6 @@ export default function Contact() {
           e.preventDefault();
         }}
       >
-        <div>
-          <label htmlFor="name">
-            <b>Name</b>
-          </label>
-          {isEditing ? (
-            <input
-              type="text"
-              name="name"
-              id="name"
-              value={info.name}
-              onChange={handleChange}
-            />
-          ) : (
-            <p>{info.name}</p>
-          )}
-        </div>
         <div>
           <label htmlFor="phone">
             <b>Phone</b>

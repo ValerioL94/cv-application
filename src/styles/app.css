@@ -15,6 +15,7 @@
   overflow: hidden;
   border-radius: 50%;
   border: 1px solid black;
+  box-sizing: border-box;
 }
 #photo > img {
   height: auto;
@@ -35,6 +36,9 @@
   box-sizing: border-box;
 }
 
-#experience > h2 {
+.expTitle {
+  display: flex;
+  align-items: center;
+  height: 50px;
   border-bottom: 1px solid;
 }

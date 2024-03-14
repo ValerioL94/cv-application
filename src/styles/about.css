@@ -1,0 +1,41 @@
+#header {
+  min-height: 250px;
+}
+#header button {
+  color: whitesmoke;
+  background-color: midnightblue;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.intro label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+.intro input {
+  font-size: 16px;
+  max-width: 200px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro textarea {
+  height: 120px;
+  min-width: 250px;
+}
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}

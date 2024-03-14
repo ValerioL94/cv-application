@@ -11,3 +11,16 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+button {
+  transition: transform linear 0.5s;
+}
+button:hover,
+button:focus {
+  transform: scale(1.2);
+}
+
+@media print {
+  button {
+    display: none;
+  }
+}
