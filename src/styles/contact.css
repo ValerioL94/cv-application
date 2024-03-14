@@ -1,25 +1,26 @@
 #contact {
-  height: 320px;
+  min-height: 300px;
 }
-#contact > div {
+#contact > .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid white;
   margin-bottom: 10px;
+  height: 50px;
 }
-#edit {
+.edit {
   height: 25px;
   width: 50px;
   border-radius: 10px;
-  cursor: pointer;
   font-weight: 600;
   color: midnightblue;
 }
-#edit:hover,
-#edit:focus {
+button:hover,
+button:focus {
   background-color: white;
   border-color: white;
+  cursor: pointer;
 }
 form {
   display: flex;

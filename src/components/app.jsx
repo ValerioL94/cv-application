@@ -1,6 +1,8 @@
 // import { useState } from 'react';
 import '/src/styles/app.css';
 import Contact from './contact';
+import Education from './education';
+import Language from './language';
 
 function App() {
   // const [status, setStatus] = useState('Test');
@@ -11,29 +13,8 @@ function App() {
           <img src="src/assets/images/brown-ostrich.jpg" alt="brown ostrich" />
         </div>
         <Contact />
-        <div id="education">
-          <h2>Education</h2>
-          <div>
-            <p>2002-2006</p>
-            <h3>Some degree</h3>
-            <p>Some College</p>
-          </div>
-          <div>
-            <p>2007-2012</p>
-            <h3>Some degree</h3>
-            <p>Some University</p>
-          </div>
-        </div>
-        <div id="language">
-          <div>
-            <div>
-              <h2>Language</h2>
-            </div>
-            <h3>English</h3>
-            <h3>Spanish</h3>
-            <h3>French</h3>
-          </div>
-        </div>
+        <Education />
+        <Language />
       </div>
       <div className="main">
         <div id="about">

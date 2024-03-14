@@ -3,17 +3,24 @@ import '/src/styles/contact.css';
 
 export default function Contact() {
   const [isEditing, setIsEditing] = useState(false);
-  const [name, setName] = useState('John Smith');
-  const [phone, setPhone] = useState('555-555-5555');
-  const [email, setEmail] = useState('notarealemail@gmail.com');
-  const [address, setAddress] = useState('123 notReal St., BigCity');
-
+  const [info, setInfo] = useState({
+    name: 'John Smith',
+    phone: '555-555-5555',
+    email: 'notarealemail@gmail.com',
+    address: '123 notReal St., BigCity',
+  });
+  function handleChange(e) {
+    setInfo({
+      ...info,
+      [e.target.name]: e.target.value,
+    });
+  }
   return (
-    <div id="contact">
-      <div>
+    <section id="contact">
+      <div className="title">
         <h2>Contact</h2>
         <button
-          id="edit"
+          className="edit"
           type="submit"
           onClick={() => {
             setIsEditing(!isEditing);
@@ -36,13 +43,11 @@ export default function Contact() {
               type="text"
               name="name"
               id="name"
-              value={name}
-              onChange={(e) => {
-                setName(e.target.value);
-              }}
+              value={info.name}
+              onChange={handleChange}
             />
           ) : (
-            <p>{name}</p>
+            <p>{info.name}</p>
           )}
         </div>
         <div>
@@ -54,13 +59,11 @@ export default function Contact() {
               type="tel"
               name="phone"
               id="phone"
-              value={phone}
-              onChange={(e) => {
-                setPhone(e.target.value);
-              }}
+              value={info.phone}
+              onChange={handleChange}
             />
           ) : (
-            <p>{phone}</p>
+            <p>{info.phone}</p>
           )}
         </div>
         <div>
@@ -72,13 +75,11 @@ export default function Contact() {
               type="email"
               name="email"
               id="email"
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
+              value={info.email}
+              onChange={handleChange}
             />
           ) : (
-            <p>{email}</p>
+            <p>{info.email}</p>
           )}
         </div>
         <div>
@@ -90,16 +91,14 @@ export default function Contact() {
               type="text"
               name="address"
               id="address"
-              value={address}
-              onChange={(e) => {
-                setAddress(e.target.value);
-              }}
+              value={info.address}
+              onChange={handleChange}
             />
           ) : (
-            <p>{address}</p>
+            <p>{info.address}</p>
           )}
         </div>
       </form>
-    </div>
+    </section>
   );
 }

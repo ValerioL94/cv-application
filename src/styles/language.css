@@ -1,0 +1,44 @@
+#language {
+  min-height: 200px;
+}
+#language > .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  height: 50px;
+}
+.list {
+  padding: 0;
+}
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+.list li button {
+  border-radius: 50%;
+  color: midnightblue;
+  font-weight: 600;
+  padding: 2px 6px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+form.add {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.add button {
+  justify-content: center;
+  font-weight: 600;
+  color: midnightblue;
+  border-radius: 10px;
+  height: 25px;
+  width: 50px;
+}
