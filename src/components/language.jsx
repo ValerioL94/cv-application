@@ -31,7 +31,7 @@ export default function Language() {
           </li>
         ))}
       </ul>
-      <form className="add" onSubmit={(e) => e.preventDefault()}>
+      <form className="sideForm" onSubmit={(e) => e.preventDefault()}>
         {isEditing ? (
           <>
             <input

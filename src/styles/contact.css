@@ -22,19 +22,21 @@ button:focus {
   border-color: white;
   cursor: pointer;
 }
-form {
+.sideForm {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-form > div {
+.sideForm > div {
   display: flex;
   flex-direction: column;
 }
-form p {
+.sideForm p {
   margin: 5px 0;
+  border: 3px solid transparent;
+  border-width: 3px 0;
 }
-form input {
+.sideForm input {
   font-size: 16px;
   margin: 5px 0;
 }

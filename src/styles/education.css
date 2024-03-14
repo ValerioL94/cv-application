@@ -1,20 +1,20 @@
 #education {
   min-height: 200px;
 }
-#education > .title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid white;
-  margin-bottom: 10px;
-  height: 50px;
+
+#degrees {
+  gap: 20px;
 }
-.degree {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
+li h3,
+li p {
+  margin: 5px 0px;
 }
-.degree p,
-.degree h3 {
-  margin: 0;
+
+form button {
+  align-self: end;
+  font-weight: 600;
+  color: midnightblue;
+  border-radius: 10px;
+  height: 25px;
+  width: 50px;
 }

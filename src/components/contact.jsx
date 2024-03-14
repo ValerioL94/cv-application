@@ -30,6 +30,7 @@ export default function Contact() {
         </button>
       </div>
       <form
+        className="sideForm"
         onSubmit={(e) => {
           e.preventDefault();
         }}
